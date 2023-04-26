@@ -1,0 +1,1176 @@
+
+
+
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #085258;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .scroll-up-btn:hover {
+    filter: brightness(90%);
+  }
+
+
+.parent{
+    height: 710px;
+    width: 1520px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+}
+
+.parent img{
+    height: 714px;
+    width: 1520px;
+    position: fixed;
+}
+
+
+
+/* navbar */
+
+.mynav{
+    height: 70px;
+    width: 1519px;
+    position: fixed;
+    z-index: +2;
+    background-color: transparent;
+    color:#E6E6E6;
+    display: flex;
+    justify-content: center;
+    transition:all 0.2s ease;
+    top: 0px;
+    left: 0px;
+}
+
+.stickya{
+   height: 75px;
+    background-color: rgb(23, 22, 22);
+    /* border-bottom: 1px solid black; */
+    /* box-shadow:4px 4px 4px 4px #2d2e2e; */
+}
+
+.nav-head{
+    font-size: 35px;
+    font-weight: 700;
+     padding-top: 8px; 
+    transition: all 0.3s ease;
+    cursor: pointer;
+    left: 200px;
+    top: 13px;
+    position: absolute;
+    transition:all 0.4s ease;
+}
+
+
+.stickyb{
+    left: 200px;
+    top: 13px;
+}
+
+.nav-head:hover{
+    transform: scale(1.05);
+    color: #E6E6E6;
+    
+}
+
+.nav-links
+{   
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 550px;
+    top: 37px;
+    transition:all 0.3 ease;
+}
+
+.stickyc{
+    left: 200px;
+    top: 13px;
+}
+
+.nav-titles{
+    margin-left: 40px;
+    transition: all 0.3s ease;
+}
+
+/* .nav-titles:hover{
+    transform: scale(1.05);
+} */
+
+.nav-titles a{
+    transition: all 0.3s ease;
+}
+
+.nav-titles:hover a{
+    color: #0f8a95;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #0f8a95;
+}
+
+.nav-titles a{
+    color: #E6E6E6;
+    text-decoration: none;
+    font-size: 17.5px;
+    font-weight: 540;
+}
+
+
+
+/* home */
+
+.home{
+    background-color: transparent;
+    height: 550px;
+    width: 1510px;
+    /* border: 4px solid white; */
+    position: relative;
+    z-index: +1;
+    /* top: 105px;
+    left: 0px; */
+    
+}
+
+
+h1{
+    color: red;
+}
+
+.nav{
+    height: 10vh;
+}
+
+.context{
+    margin-left: 18vw;
+}
+
+.navcontainer{
+    padding-left: 13vw;
+}
+
+.lista{
+    color: #E6E6E6;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.list{
+    color: #E6E6E6;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.items{
+    margin-left: 20px;
+}
+
+.static-txt{
+    /* border: 1px solid black; */
+    padding-left: 7rem;
+    color: #E6E6E6;
+    font-size: 35px;
+    font-weight:400;
+    margin-top: 10rem;
+    height: 42px;
+}
+
+.static-txtb{
+    /* border: 1px solid black; */
+    padding-left: 7rem;
+    color: #E6E6E6;
+    font-size: 60px;
+    font-weight:600;
+    height: 70px;
+    padding-top: 0px;
+}
+.contain{
+    /* border: 1px solid black; */
+    padding-left: 7rem;
+    color: #E6E6E6;
+    font-size: 35px;
+    font-weight:500;
+}
+
+.about-button{
+    height: 60px;
+    width: 330px;
+    margin-left: 7rem;
+    margin-top: 1rem;
+}
+
+.about-button button{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(241, 43, 76); */
+    background-color: #085258;
+    color: #E6E6E6;
+    border-radius: 8px;
+    font-size: 25px;
+    font-weight: 400;
+    border: none;
+    transition: all 0.3s ease;
+    
+}
+
+.about-button button:hover{
+    background-color: transparent;
+    color: #085258;
+    border: 2px solid #085258;
+    
+}
+
+.contain .text{
+    position:relative;
+    font-size: 30px;
+    font-weight: 600;
+    /* color: blue; */
+    
+}
+
+.contain .text.first-text{
+    color: #E6E6E6;
+}
+
+.text.sec-text{
+    content:"";
+    height: 100%;
+    width: 100%;
+    color: transparent;
+     background-image: linear-gradient(#0f8a95,#0f8a95);
+     background-repeat: no-repeat;
+     -webkit-background-clip: text; 
+      animation: backcolor 2s linear infinite alternate; 
+
+}
+
+.text.sec-texteng{
+    background-position: -128px 0;
+}
+
+.text.sec-textcp{
+    background-position: -355px 0;
+}
+
+.text.sec-textwd{
+    background-position: -217px 0;
+}
+
+.text.sec-textlearn{
+    background-position: -108px 0;
+}
+
+
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+
+
+
+
+/* About page */
+
+.about{
+    height: 100vh;
+    width: 1510px;
+    background-color: transparent;
+    position: relative;
+    z-index: +1;
+    
+}
+
+.about-heading{
+    height: 20vh;
+    width: 100%;
+    font-size: 33px;
+    font-weight: 470;
+    color: #E6E6E6;
+    text-align: center;
+    
+}
+
+.about-heading .who-text{
+    font-size: 18px;
+    background-color: #E6E6E6;
+    width: 92px;
+    height: 28px;
+    margin: auto;
+    color: black;
+    font-weight: 550;
+    border-radius: 4px;
+    transition:all 0.1s ease;
+    cursor: pointer;
+}
+
+.about-heading .who-text:hover{
+    background-color: transparent;
+    color: #E6E6E6;
+    width: 96px;
+    height: 32px;
+
+}
+
+
+
+.about-context{
+    display: flex;
+    justify-content: center;
+}
+
+.about-img{
+    height: 80vh;
+    width:50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.about-img img{
+    height: 55vh;
+    width:50%;
+    border-radius: 420px;
+    align-items: center;
+    margin-top: 12vh;
+    margin-left: 160px;
+}
+
+
+.about-data{
+    height: 80vh;
+    width:50%;
+    padding-top: 20vh;
+    font-size: 15px;
+    font-weight: 250;
+    color: #E6E6E6;
+    
+}
+
+.about-data p{
+    text-align: justify;
+    padding-right: 160px;
+}
+
+.containb{
+    color: #E6E6E6;
+    font-size: 25px;
+    font-weight:500;
+    margin-bottom: 6px;
+}
+
+.containb .textb{
+    position:relative;
+    font-size: 25px;
+    font-weight: 600;
+    color: 085258;
+}
+
+.containb .textb.firstb-text{
+    color: #E6E6E6;
+}
+
+.textb.secb-text{
+    content:"";
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    background-image: linear-gradient(#0f8a95,#0f8a95);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text; 
+    animation: backcolorb 2s linear infinite alternate;
+
+}
+
+.textb.secb-texteng{
+    background-position: -128px 0;
+}
+
+.textb.secb-textcp{
+    background-position: -355px 0;
+}
+
+.textb.secb-textwd{
+    background-position: -217px 0;
+}
+
+.textb.secb-textlearn{
+    background-position: -108px 0;
+}
+
+@keyframes backcolorb{
+    100%{
+        background-position: 0 0;;
+    }
+}
+
+
+/* Education */
+
+.education{
+    height: 100vh;
+    width: 1510px;
+    background-color: transparent;
+    position: relative;
+    z-index: +1;
+}
+
+.education-heading{
+    height: 20vh;
+    width: 100%;
+    font-size: 33px;
+    font-weight: 470;
+    color: #E6E6E6;
+    text-align: center;
+    
+}
+
+.education-heading .myexp-text{
+    font-size: 18px;
+    background-color: #E6E6E6;
+    width: 150px;
+    height: 28px;
+    margin: auto;
+    color: black;
+    font-weight: 550;
+    border-radius: 4px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.education-heading .myexp-text:hover{
+    background-color: transparent;
+    color: #E6E6E6;
+    width: 154px;
+    height: 32px;
+}
+
+.education-content{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.educations{
+    height: 38vh;
+    width: 350px;
+    margin-top: 100px;
+    margin-left: 50px;
+    background-color: #E6E6E6;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.levedu{
+    height: 38vh;
+    width: 350px;
+    transition: all 0.3s ease;
+
+}
+
+.educations:hover .levedu{
+    background: #085258;
+    transform: scale(1.05);
+}
+
+
+.educations .abc{
+  margin-top: 15px;
+  font-size: 50px;
+  color: #0f8a95;
+  transition: color 0.3s ease;
+
+}
+
+.educations:hover .abc{
+    color: #E6E6E6;
+  }
+
+  .where{
+    margin-top: 22px;
+    font-size: 30px;
+    font-weight: 550;
+  }
+
+  .where-name i{
+    font-size: 15px;
+    color: black
+  }
+
+  .where-name i :hover{
+    color: black
+  }
+
+  .where-name{
+    font-size: 15px;
+    font-weight: 550;
+    margin-top: 22px;
+  }
+
+  .where-name p{
+    margin-top: -13px;
+  }
+
+/* Experience */
+
+.experience{
+    height: 100vh;
+    width: 1490px;
+    background-color: black;
+    position: relative;
+    z-index: +1;
+    margin: auto;
+}
+
+.experience-heading{
+    padding-top: 35px;
+    height: 20vh;
+    width: 100%;
+    font-size: 33px;
+    font-weight: 470;
+    color: #E6E6E6;
+    text-align: center;
+    
+}
+
+.experience-heading .myexperience-text{
+    font-size: 18px;
+    background-color: #E6E6E6;
+    width: 155px;
+    height: 28px;
+    margin: auto;
+    color: black;
+    font-weight: 550;
+    border-radius: 4px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.experience-heading .myexperience-text:hover{
+    background-color: transparent;
+    color: #E6E6E6;
+    width: 159px;
+    height: 32px;
+}
+
+.experience-content{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.experience .experience-content .exps{
+    height: 38vh;
+    width: 350px;
+    margin-top: 100px;
+    margin-left: 50px;
+    background-color: rgb(23, 22, 22);
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.experience .exps{
+    color: #E6E6E6;
+    transition: all 0.3s ease;
+}
+
+.experience .exp-title{
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+
+}
+
+.experience .about-exp{
+    font-size: 15px;
+    font-weight: 400;
+    width: 250px;
+    margin: auto;
+}
+
+.experience .about-exp a{
+    text-decoration: none;
+    color:#0f8a95;
+    
+}
+
+.experience .exps:hover{
+    transform: scale(1.05);
+    background-color: #085258;
+}
+
+.experience .exps:hover a{
+    color: black;
+}
+
+/* skills */
+
+.skills{
+    height: 80vh;
+    width: 1519px;
+    background-color: transparent;
+    position: relative;
+    z-index: +1;
+}
+
+.skills-heading{
+    padding-top: 55px;
+    height: 20vh;
+    width: 100%;
+    font-size: 33px;
+    font-weight: 470;
+    color: #E6E6E6;
+    text-align: center;
+    
+}
+
+.skills-heading .skill-sub{
+    font-size: 18px;
+    background-color: #E6E6E6;
+    width: 125px;
+    height: 28px;
+    margin: auto;
+    color: black;
+    font-weight: 550;
+    border-radius: 4px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.skills-heading .skill-sub:hover{
+    background-color: transparent;
+    color: #E6E6E6;
+    width: 129px;
+    height: 32px;
+}
+
+.skills-content{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-content-one{
+    height: 60vh;
+    width: 50%;
+    color: #E6E6E6;
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-right: 80px;
+
+}
+
+.skill-content-one .skill-content-one-heading{
+    font-size: 22px;
+    font-weight: 500;
+    color: #E6E6E6;
+    margin-bottom: 25px;
+
+}
+
+.skill-content-one .skill-content-one-data
+{
+    font-weight: 100;
+    text-align: justify;
+}
+
+.skill-content-one-data .skill-git{
+    text-decoration: none;
+    color: #E6E6E6;
+    height: 25px;
+    width: 70px;
+    background-color: #085258;
+    border-radius: 4px;
+    transition:all 0.3s ease;
+    border: none;
+}
+
+.skill-content-one-data .skill-git:hover{
+    border: 2px solid #E6E6E6;
+    color: #0f8a95;
+    background-color: transparent;
+}
+
+
+
+.skill-content-two{
+    height: 60vh;
+    width: 50%;
+    color: #E6E6E6;
+    padding-left: 30px;
+    padding-top: 108px;
+}
+
+.skill-content-two i{
+    padding-right: 10px;
+    color: #085258;
+}
+
+/* Achievements */
+
+.achievements{
+    height: 80vh;
+    width: 1490px;
+    background-color: black;
+    position: relative;
+    z-index: +1;
+    margin: auto;
+}
+
+.achievements-heading{
+    padding-top: 55px;
+    height: 20vh;
+    width: 100%;
+    font-size: 33px;
+    font-weight: 470;
+    color: #E6E6E6;
+    text-align: center;
+    
+}
+
+.achievements-heading .achievements-sub{
+    font-size: 18px;
+    background-color: #E6E6E6;
+    width: 160px;
+    height: 28px;
+    margin: auto;
+    color: black;
+    font-weight: 550;
+    border-radius: 4px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.achievements-heading .achievements-sub:hover{
+    background-color: transparent;
+    color: #E6E6E6;
+    width: 164px;
+    height: 32px;
+}
+
+.achievement-content{
+    height: 60vh;
+    max-width: 1490px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.achievement-content .main-card{
+    width: 200%;
+    background-color: transparent;
+    display: flex;
+    transition: all 1s ease;
+}
+
+#twob:checked~ .main-card{
+    margin-left: -100%;
+}
+
+
+.achievement-content .main-card .cards{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 2 - 10px);
+}
+
+.achievement-content .main-card .cards .card--a{
+    height: 30vh;
+    width: 350px;
+    margin-left: 35px;
+    background-color: rgb(23, 22, 22);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    color: #E6E6E6;
+}
+
+.achievement-content .main-card .cards .card--a:hover{
+    background-color: #085258;
+    transform: scale(1.05);
+}
+
+.achievement-content .main-card .cards .card--a .ach-card-head{
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+
+}
+.achievement-content .main-card .cards .card--a .ach-card-details{
+    font-size: 15px;
+    font-weight: 400;
+    width: 250px;
+    margin: auto;
+}
+
+
+
+.achievement-buttons{
+    display: flex;
+    margin-left:20px;
+    justify-content: center;
+}
+
+.achievement-buttons label{
+    height: 15px;
+    width: 15px;
+    background: transparent;
+    margin: 0 4px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid #085258;
+    cursor: pointer;
+}
+
+.achievement-buttons label:hover{
+    background: #085258;
+}
+
+.achievement-buttons label.active{
+    width: 35px;
+    background: #085258;
+   
+}
+
+#oneb:checked ~ .achievement-buttons label.one{
+    width: 35px;
+    background: #085258;
+}
+
+#twob:checked ~ .achievement-buttons label.two{
+    width: 35px;
+    background: #085258;
+}
+
+#oneb:checked ~ .achievement-buttons label.two{
+    width: 15px;
+    background: transparent;
+}
+
+#twob:checked ~ .achievement-buttons label.one{
+    width: 15px;
+    background: transparent;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+
+
+/* Projects */
+
+
+.projects{
+    height: 80vh;
+    width: 1490px;
+    background-color: transparent;
+    position: relative;
+    z-index: +1;
+    margin: auto;
+}
+
+.projects-heading{
+    padding-top: 55px;
+    height: 20vh;
+    width: 100%;
+    font-size: 33px;
+    font-weight: 470;
+    color: #E6E6E6;
+    text-align: center;
+    
+}
+
+.projects-heading .projects-sub{
+    font-size: 18px;
+    background-color: #E6E6E6;
+    width: 125px;
+    height: 28px;
+    margin: auto;
+    color: black;
+    font-weight: 550;
+    border-radius: 4px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.projects-heading .projects-sub:hover{
+    background-color: transparent;
+    color: #E6E6E6;
+    width: 129px;
+    height: 32px;
+}
+
+.project-content{
+    height: 60vh;
+    max-width: 1490px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-content .main-card{
+    width: 200%;
+    background-color: transparent;
+    display: flex;
+    transition: all 1s ease;
+}
+
+#two:checked~ .main-card{
+    margin-left: -100%;
+}
+
+
+.project-content .main-card .cards{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 2 - 10px);
+}
+
+.project-content .main-card .cards .card--a{
+    height: 30vh;
+    width: 350px;
+    margin-left: 35px;
+    overflow: hidden;
+    position: relative;
+    transition:all 0.5s ease;
+    cursor: pointer;
+}
+
+.project-content .main-card .card--a .img{
+    height: 30vh;
+    width: 350px; 
+}
+
+.project-content .main-card .card--a img{
+    height: 30vh;
+    width: 350px;
+    border-radius: 10px;
+    transition:all .2s ease;
+    border: 1px solid black;
+}
+
+.project-content .main-card .card--a .details{
+    height: 0vh;
+    width: 350px;
+    background-color: black;
+    position: absolute;
+    /* z-index: 1; */
+    border-radius: 10px;
+    transition:all 0.5s ease;
+    text-align: center;
+    
+}
+
+.project-content .main-card .card--a:hover .details{
+    height: 5vh;
+    bottom: 0px;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.project-content .main-card .card--a .details a{
+    color: #E6E6E6;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition:all 0.5s ease;
+}
+
+.project-content .main-card .card--a .details a:hover{
+    color: #0f8a95;
+}
+
+.project-buttons{
+    display: flex;
+    margin-left:20px;
+    justify-content: center;
+}
+
+.project-buttons label{
+    height: 15px;
+    width: 15px;
+    background: transparent;
+    margin: 0 4px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid #085258;
+    cursor: pointer;
+}
+
+.project-buttons label:hover{
+    background: #085258;
+}
+
+.project-buttons label.active{
+    width: 35px;
+    background: #085258;
+   
+}
+
+#one:checked ~ .project-buttons label.one{
+    width: 35px;
+    background: #085258;
+}
+
+#two:checked ~ .project-buttons label.two{
+    width: 35px;
+    background: #085258;
+}
+
+#one:checked ~ .project-buttons label.two{
+    width: 15px;
+    background: transparent;
+}
+
+#two:checked ~ .project-buttons label.one{
+    width: 15px;
+    background: transparent;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+
+/* Footer */
+
+.footer{
+    height: 52vh;
+    width: 1517px;
+    background-color: black;
+    position: relative;
+    z-index: +1;
+}
+
+.footer-heading{
+    padding-top: 55px;
+    height: 20vh;
+    width: 100%;
+    font-size: 33px;
+    font-weight: 470;
+    color: #E6E6E6;
+    text-align: center;
+    
+}
+
+.footer-heading .footer-sub{
+    font-size: 18px;
+    background-color: #E6E6E6;
+    width: 125px;
+    height: 28px;
+    margin: auto;
+    color: black;
+    font-weight: 550;
+    border-radius: 4px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.footer-heading .footer-sub:hover{
+    background-color: transparent;
+    color: #E6E6E6;
+    width: 129px;
+    height: 32px;
+    
+}
+
+.footer-links{
+    height: 22vh;
+    width: 1517px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.footer-titles{
+    height: 40px;
+    margin-top:45px;
+    margin-left: 70px;
+    transition: all 0.3s ease;
+
+}
+
+
+.footer-titles a{
+    color: #E6E6E6;
+    text-decoration: none;
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+.footer-titles i{
+    color: #E6E6E6;
+}
+
+.footer-titles:hover a{
+    color:#0f8a95
+}
+
+.footer-last{
+    height: 10vh;
+    width: 1520px;
+    border-top: 3px solid #E6E6E6;
+    color: #E6E6E6;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.footer-last p{
+    padding-top: 14px;
+}
+
+
